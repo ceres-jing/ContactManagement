@@ -3,7 +3,10 @@ import java.util.HashMap;
 
 public class PersonalContactCategory implements ContactCategory{
 
-    public void addContact(){};
+    public void addContact(String name, String email, String phoneNumber){
+        Contact newContact = new Contact(name,email,phoneNumber);
+        personalContactMap.put(name,newContact);
+    };
     public void removeContact(){};
     public void viewContacts(){};
     public void searchContacts(){};
