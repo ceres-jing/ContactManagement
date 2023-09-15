@@ -11,7 +11,9 @@ public class PersonalContactCategory implements ContactCategory{
         personalContactMap.remove(name);
     }
     public void viewContacts(){};
-    public void searchContacts(){};
+    public void searchContacts(String name){
+        personalContactMap.get(name);
+    }
 
     HashMap<String,Contact> personalContactMap = new HashMap<>();
 
