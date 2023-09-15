@@ -10,6 +10,10 @@ public class PersonalContactCategory implements ContactCategory{
     public void removeContact(String name){
         personalContactMap.remove(name);
     }
+
+    public void searchContacts(String name){
+        personalContactMap.get(name);
+    }
     public void viewContacts(){
         ArrayList<Contact> listOfContacts = new ArrayList<>(personalContactMap.values());
         for (Contact contact:
@@ -19,7 +23,7 @@ public class PersonalContactCategory implements ContactCategory{
         }
 
     }
-    public void searchContacts(){}
+   
 
     HashMap<String,Contact> personalContactMap = new HashMap<>();
 
