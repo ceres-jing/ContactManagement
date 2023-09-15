@@ -4,7 +4,9 @@ import java.util.HashMap;
 public class PersonalContactCategory implements ContactCategory{
 
     public void addContact(){};
-    public void removeContact(){};
+    public void removeContact(String name){
+        personalContactMap.remove(name);
+    }
     public void viewContacts(){};
     public void searchContacts(){};
 
