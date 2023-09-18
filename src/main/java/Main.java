@@ -7,7 +7,5 @@ public class Main {
         contactManager.removeContacts();
         System.out.println("test");
 
-
-
     }
 }
