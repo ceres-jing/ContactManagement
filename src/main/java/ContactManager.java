@@ -64,7 +64,6 @@ public class ContactManager {
 
         };
 
-
 //    public void writeToCSV() {
 //
 //        HashMap<String,Contact> data = populateHashMap("src/main/resources/personalContacts.csv");
