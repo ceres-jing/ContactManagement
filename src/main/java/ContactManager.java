@@ -19,10 +19,11 @@ public class ContactManager {
 
     ContactCategory currentCategory;
     HashMap<String,Contact> currentHashMap ;
+    Scanner myScanner = new Scanner(System.in);
+
 
     public HashMap<String,Contact> selectCategory(){
         System.out.println("please select which category you want to switch, work or personal");
-        Scanner myScanner = new Scanner(System.in);
         String userCategory=myScanner.nextLine();
         switch (userCategory.toLowerCase()){
             case "work" ->
@@ -62,7 +63,24 @@ public class ContactManager {
 
         return currentHashMap;
 
-        };
+
+
+        }
+
+        void addContacts(){
+            System.out.println("Add new contacts");
+            System.out.println("Please enter new contact's name:");
+            String name = myScanner.nextLine();
+            System.out.println("Please enter new contact's phone number:");
+            String phoneNumber = myScanner.nextLine();
+            System.out.println("Please enter new contact's email address:");
+            String emailAddress = myScanner.nextLine();
+            Contact newContact = new Contact(name,phoneNumber,emailAddress);
+            currentHashMap.put(name,newContact);
+
+
+        }
+
 
 //    public void writeToCSV() {
 //

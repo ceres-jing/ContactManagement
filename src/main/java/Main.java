@@ -3,6 +3,8 @@ public class Main {
         ContactManager contactManager = new ContactManager();
         contactManager.populateHashMap("src/main/resources/personalContacts.csv");
         //contactManager.populateHashMap("src/main/resources/workingContacts.csv");
+        contactManager.addContacts();
+        System.out.println("test");
 
 
 
