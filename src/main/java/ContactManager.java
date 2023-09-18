@@ -81,6 +81,12 @@ public class ContactManager {
 
         }
 
+        void removeContacts(){
+            System.out.println("Remove a contact");
+            System.out.println("Please enter the name of the contact you want to remove:");
+            String name = myScanner.nextLine();
+            currentHashMap.remove(name);
+        }
 
 
 //    public void writeToCSV() {

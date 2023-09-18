@@ -4,6 +4,7 @@ public class Main {
         contactManager.populateHashMap("src/main/resources/personalContacts.csv");
         //contactManager.populateHashMap("src/main/resources/workingContacts.csv");
         contactManager.addContacts();
+        contactManager.removeContacts();
         System.out.println("test");
 
 
